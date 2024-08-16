@@ -1,0 +1,3628 @@
+{
+	"info": {
+		"_postman_id": "8b57ef34-f689-42c1-abda-3cfd44fd0197",
+		"name": "Zipcho",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ZipchoAuth",
+			"item": [
+				{
+					"name": "accountPrivacy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NjE1OTAyLCJpYXQiOjE2NzY0NDMxMDIsImp0aSI6ImI2ODhlMmM3ODA1...",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"privacy\": 0\n}"
+						},
+						"url": "{{host}}/authentication/accountPrivacy"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchAccountPrivacy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "{{host}}/authentication/fetchAccountPrivacy"
+					},
+					"response": []
+				},
+				{
+					"name": "updateNotificationSettings",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": 1\r\n}"
+						},
+						"url": "{{host}}/authentication/updateNotificationSettings"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchNotificationSettings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/fetchNotificationSettings"
+					},
+					"response": []
+				},
+				{
+					"name": "updateInteractions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"posts\": 1,\r\n  \"comments\": 1,\r\n  \"mentions\": 1,\r\n  \"messages\": 1,\r\n  \"activityStatus\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/authentication/updateInteractions"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchInteractions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/fetchInteractions"
+					},
+					"response": []
+				},
+				{
+					"name": "validateEmail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"shweta1@12.com\"\n\n}"
+						},
+						"url": "{{host}}/authentication/validateEmail"
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"sanju\",\n    \"lastName\": \"g\",\n    \"mobileNumber\": \"2022252556\",\n    \"email\": \"sanju@123456.com\",\n    \"role\": \"2\",\n    \"password\": \"123123\",\n    \"confirm_password\": \"123123\",\n    \"termsAgreed\": 1,\n    \"isOnBoardingCompleted\": 1\n}"
+						},
+						"url": "{{host}}/authentication/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "verifyOTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"otp\": 1234,\n    \"email\": \"shweta1@12.com\",\n    \"mobileNumber\": \"2022152544\"\n}"
+						},
+						"url": "{{host}}/authentication/verifyOTP"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Token generated\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    var result = jsonData.data.access;\r",
+									"    pm.environment.set(\"Token\", \"Bearer\"+\" \"+result);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"emailMobile\":\"9486865603\",\n    \"password\": \"123123\"\n}"
+						},
+						"url": "{{host}}/authentication/login"
+					},
+					"response": []
+				},
+				{
+					"name": "loginWithOTP",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mobileNumber\": \"2022212508\"\n}"
+						},
+						"url": "{{host}}/authentication/loginWithOTP"
+					},
+					"response": []
+				},
+				{
+					"name": "validateUsername",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\":\"test06\",\n  \"type\":2\n}"
+						},
+						"url": "{{host}}/authentication/validateUsername"
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"password\": \"123123\",\n  \"confirmPassword\": \"123123\"\n}"
+						},
+						"url": "{{host}}/authentication/resetPassword"
+					},
+					"response": []
+				},
+				{
+					"name": "updateProfile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "lastName",
+									"value": "G",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "Im Awsome",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "shwe",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "shweta",
+									"type": "text"
+								},
+								{
+									"key": "isOnBoardingCompleted",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/authentication/updateProfile"
+					},
+					"response": []
+				},
+				{
+					"name": "profilePicUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profileImage",
+									"type": "file",
+									"src": "/C:/Users/Soumya/Downloads/image.png"
+								}
+							]
+						},
+						"url": "{{host}}/authentication/profilePicUpdate"
+					},
+					"response": []
+				},
+				{
+					"name": "removeProfileImage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profileImage",
+									"type": "file",
+									"src": "/C:/Users/Soumya/Downloads/image.png"
+								}
+							]
+						},
+						"url": "{{host}}/authentication/removeProfileImage"
+					},
+					"response": []
+				},
+				{
+					"name": "getProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getProfile"
+					},
+					"response": []
+				},
+				{
+					"name": "getUserGender",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getUserGender"
+					},
+					"response": []
+				},
+				{
+					"name": "userInterests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ids\": [\n    2\n  ]\n}"
+						},
+						"url": "{{host}}/authentication/userInterests"
+					},
+					"response": []
+				},
+				{
+					"name": "getUserInterests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getUserInterests"
+					},
+					"response": []
+				},
+				{
+					"name": "userCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ids\": [\n    1,3,4\n  ]\n}"
+						},
+						"url": "{{host}}/authentication/userCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "getUserCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getUserCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "languagePreferences",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ids\": [\n    1,2,3\n  ]\n}"
+						},
+						"url": "{{host}}/authentication/languagePreferences"
+					},
+					"response": []
+				},
+				{
+					"name": "getUserlanguages",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getUserlanguages"
+					},
+					"response": []
+				},
+				{
+					"name": "getUserCountry",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getUserCountry"
+					},
+					"response": []
+				},
+				{
+					"name": "help",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/help"
+					},
+					"response": []
+				},
+				{
+					"name": "contactUs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"soumyag\",\n  \"email\": \"soumyag123@gmail.com\",\n  \"message\": \"xyzzzz\"\n}"
+						},
+						"url": "{{host}}/authentication/contactUs"
+					},
+					"response": []
+				},
+				{
+					"name": "fcmRegister",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"registration_id\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/authentication/fcmRegister"
+					},
+					"response": []
+				},
+				{
+					"name": "applyVerification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "92ZDAZBjq7cl4MDP9TO2ZKnP2TgkqiMk8uWD6D05Ox8GHqM8rHQaBMqutSSJ74O0"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "documentId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"type": "file",
+									"src": "/C:/Users/Soumya/Downloads/Aadhar.jpg"
+								},
+								{
+									"key": "link",
+									"value": "{\"linkType\"3:,\"linkPath\":\"https://www.linkedin.com\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/authentication/applyVerification"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchVerification",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "92ZDAZBjq7cl4MDP9TO2ZKnP2TgkqiMk8uWD6D05Ox8GHqM8rHQaBMqutSSJ74O0"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "documentId",
+									"value": "1275",
+									"type": "text"
+								},
+								{
+									"key": "document",
+									"value": "aadhatr",
+									"type": "text"
+								},
+								{
+									"key": "link",
+									"value": "{\"linkType\": 0,\"linkPath\": \"dgre\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/authentication/fetchVerification"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllVerificationLinks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "92ZDAZBjq7cl4MDP9TO2ZKnP2TgkqiMk8uWD6D05Ox8GHqM8rHQaBMqutSSJ74O0"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getAllVerificationLinks"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllIdentityDocuments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "92ZDAZBjq7cl4MDP9TO2ZKnP2TgkqiMk8uWD6D05Ox8GHqM8rHQaBMqutSSJ74O0"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/authentication/getAllIdentityDocuments"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ZipchoPortfolio",
+			"item": [
+				{
+					"name": "dashboard",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"viewerId\": \"467\"\n}"
+						},
+						"url": "{{host}}/portfolio/dashboard"
+					},
+					"response": []
+				},
+				{
+					"name": "userFollow",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"followingId\": \"31\"\n}"
+						},
+						"url": "{{host}}/portfolio/userFollow"
+					},
+					"response": []
+				},
+				{
+					"name": "updateFollowRequestStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"98\",\n  \"status\": \"1\"\n}"
+						},
+						"url": "{{host}}/portfolio/updateFollowRequestStatus"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchFollowers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"viewerId\": \"54\",\n    \"keyword\": \"s\"\n}"
+						},
+						"url": "{{host}}/portfolio/fetchFollowers"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchFollowing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"viewerId\": \"31\",\n    \"keyword\": \"s\"\n}"
+						},
+						"url": "{{host}}/portfolio/fetchFollowing"
+					},
+					"response": []
+				},
+				{
+					"name": "uploadMedia",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY2MTY4Mjk2LCJpYXQiOjE2NjU5OTU0OTYsImp0aSI6IjYxOTUyMmNjZDc5NDQ1ZTI4NTUxNTMxZjIxNjFiNTk1IiwidXNlcl9pZCI6Mzc3fQ.3WDsGtm8m46k_La0WTdvrawyIaXRu6vIhE6zCLWznLE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mediaFile",
+									"type": "file",
+									"src": "/C:/Users/Soumya/Downloads/1665989667676.JPEG"
+								}
+							]
+						},
+						"url": "http://13.232.40.48/uploadMedia"
+					},
+					"response": []
+				},
+				{
+					"name": "userPosts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"caption\": \"1\",\n    \"visibility\": \"1\",\n    \"taggedUser\": [\n        {\n            \"userId\": \"31\",\n            \"username\": \"soumya\",\n            \"fullname\": \"soumyap\"\n        }\n    ],\n    \"hashtags\": \"cool\",\n    \"mediaUrl\": \"https://zipchodev.s3.ap-south-1.amazonaws.com/zipchodev%2FportfolioImages%2F16684877931668420388486.JPEG\",\n    \"key\": \"zipchodev/portfolioImages/16684877931668420388486.JPEG\",\n    \"latitude\": \"41.40338\",\n    \"longitude\": \"2.17403\",\n    \"address\": \"Banglore \",\n    \"categoryId\": \"5\",\n    \"mediaType\": \"4\",\n    \"aspectRatio\": \"12:10\"\n}"
+						},
+						"url": "{{host}}/portfolio/userPosts"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUserPosts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"viewerId\": \"377\"\n}"
+						},
+						"url": "{{host}}/portfolio/getAllUserPosts"
+					},
+					"response": []
+				},
+				{
+					"name": "getMyWorks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"viewerId\": \"377\"\n}"
+						},
+						"url": "{{host}}/portfolio/getMyWorks"
+					},
+					"response": []
+				},
+				{
+					"name": "getPostById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjYyMTM1LCJpYXQiOjE2Njg0ODkzMzUsImp0aSI6ImM4ZTUzMjJlZDMzZTRhYWY4ZjBjNTYwYmM1N2EyNmY0IiwidXNlcl9pZCI6NTI0fQ.pviM1YhJi3do9_fRRbBbHYTQ4RRx691E_LX9_A6ZTbI"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "Sb8BCCYSgKUTkyK9SplakSV1FPs6o6rcRD5B8gnEEaQeXcTsadniWUYG6O4v5StS"
+							}
+						],
+						"url": "{{host}}/portfolio/getPostById/63731c60130450dd438f9ce7"
+					},
+					"response": []
+				},
+				{
+					"name": "userBookmark",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"post_id\": \"62f249f85b11e8bd1f1ab0a0\"\n}"
+						},
+						"url": "{{host}}/portfolio/userBookmark"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchBookmarks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/portfolio/fetchBookmarks"
+					},
+					"response": []
+				},
+				{
+					"name": "userLike",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"post_id\": \"62f34d685b11e8bd1f1ab0bd\"\n}"
+						},
+						"url": "{{host}}/portfolio/userLike"
+					},
+					"response": []
+				},
+				{
+					"name": "comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"post_id\": \"62f34d685b11e8bd1f1ab0bd\",\n  \"comment_id\": null,\n  \"type\": 1,\n  \"comment\": \"have a great day\"\n}"
+						},
+						"url": "{{host}}/portfolio/comment"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchComments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"postId\":\"62f48da038a73735c44e1435\"\n}"
+						},
+						"url": "{{host}}/portfolio/fetchComments"
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/portfolio/deletePost/62ff14304b14befc5c77dc0c?",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"portfolio",
+								"deletePost",
+								"62ff14304b14befc5c77dc0c"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"post_id\": \"62f34d685b11e8bd1f1ab0bd\",\r\n  \"caption\": \"Im Awsome\",\r\n  \"visibility\": \"erge\",\r\n  \"taggedUser\": [\r\n    {\r\n      \"userId\": \"98\"\r\n    }\r\n  ],\r\n  \"hashtags\": \"string\",\r\n  \"latitude\": \"string\",\r\n  \"longitude\": \"string\",\r\n  \"address\": \"Bnaglore\",\r\n  \"categoryId\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/portfolio/updatePost"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchReport",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/portfolio/fetchReport"
+					},
+					"response": []
+				},
+				{
+					"name": "userReport",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"reportId\": 1,\r\n  \"post_id\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/portfolio/userReport"
+					},
+					"response": []
+				},
+				{
+					"name": "myFeeds",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page_size\":2,\n    \"page\":null\n}"
+						},
+						"url": "http://65.0.89.205/portfolio/myFeeds"
+					},
+					"response": []
+				},
+				{
+					"name": "uploadMedia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				},
+				{
+					"name": "dashboard_cache",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NjYyMTM1LCJpYXQiOjE2Njg0ODkzMzUsImp0aSI6ImM4ZTUzMjJlZDMzZTRhYWY4ZjBjNTYwYmM1N2EyNmY0IiwidXNlcl9pZCI6NTI0fQ.pviM1YhJi3do9_fRRbBbHYTQ4RRx691E_LX9_A6ZTbI"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "Sb8BCCYSgKUTkyK9SplakSV1FPs6o6rcRD5B8gnEEaQeXcTsadniWUYG6O4v5StS"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"viewerId\": \"\"\n}"
+						},
+						"url": "{{host}}/portfolio/dashboard_cache"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ZipchoAdmin",
+			"item": [
+				{
+					"name": "getAllCategories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							}
+						],
+						"url": "{{host}}/zipchoAdmin/getAllCategories"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGender",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							}
+						],
+						"url": "{{host}}/zipchoAdmin/getAllGender"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllCountries",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							}
+						],
+						"url": "{{host}}/zipchoAdmin/getAllCountries"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllInterests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							}
+						],
+						"url": "{{host}}/zipchoAdmin/getAllInterests"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllLanguages",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "oSrMazgnj1QZQVbdqUPyfriHtfk4ISnoPaVzbEvGLdfoc0CpKJfSdXozELP7JW4P"
+							}
+						],
+						"url": "{{host}}/zipchoAdmin/getAllLanguages"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "searchPeople",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"p\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://65.0.89.205/search/people"
+					},
+					"response": []
+				},
+				{
+					"name": "hashtags",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/search/hashtags"
+					},
+					"response": []
+				},
+				{
+					"name": "allSearch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/search/allSearch"
+					},
+					"response": []
+				},
+				{
+					"name": "photo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/search/photo"
+					},
+					"response": []
+				},
+				{
+					"name": "video",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/search/photo"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contest",
+			"item": [
+				{
+					"name": "createContest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_title\": \"Today01Testing\",\n  \"start_date_time\": \"2022-12-01T12:00:30.471Z\",\n  \"category_id\": \"1\",\n  \"contestType_id\": \"1\",\n  \"isPaid\": 1,\n  \"fees\":100\n}"
+						},
+						"url": "{{host}}/contest/createContest"
+					},
+					"response": []
+				},
+				{
+					"name": "addRounds",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contest_id\": \"63c8e2f09a08dc06bb390dbb\",\r\n    \"round_name\": \"Testing TodayTestingEvents19\",\r\n    \"round_no\": 1,\r\n    \"no_of_finalist\": 10,\r\n    \"start_date\": \"2023-01-19T06:00:30.471Z\",\r\n    \"end_date\": \"2023-01-21T06:00:30.471Z\",\r\n    \"start_date_voting\": \"2023-01-22T06:00:30.471Z\",\r\n    \"end_date_voting\": \"2023-01-23T06:00:30.471Z\",\r\n    \"result_date\": \"2023-01-24T06:00:30.471Z\",\r\n    \"result_by\": 1,\r\n    \"instructions\": \"Roundss\",\r\n    \"isLive\": 0,\r\n    \"is_final_round\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/contest/addRounds"
+					},
+					"response": []
+				},
+				{
+					"name": "goLive",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"6375bd39f8c55e8280b8259b\"\n}"
+						},
+						"url": "{{host}}/contest/goLive"
+					},
+					"response": []
+				},
+				{
+					"name": "getRoundsById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"6375bd39f8c55e8280b8259b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/contest/getRoundsById"
+					},
+					"response": []
+				},
+				{
+					"name": "getCurrentRound",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODMyNjUxLCJpYXQiOjE2Njg2NTk4NTEsImp0aSI6IjJmZTU5Y2YzMTEyYTRmMTNiOGRiNTM3ZmFkZGQ3ZDA5IiwidXNlcl9pZCI6MzF9.3MW4PTl255FN41XAa-jSwKzHUtaPJw0ASmLxXLgT4C4"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"url": "{{host}}/contest/getCurrentRound/63650a7bd00088cf831393cc"
+					},
+					"response": []
+				},
+				{
+					"name": "getRoundDetailsByContestId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"url": "{{host}}/contest/getRoundDetailsByContestId/6375fa45f8c55e8280b825ba/267"
+					},
+					"response": []
+				},
+				{
+					"name": "featuredContest",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"string\"\r\n}"
+						},
+						"url": "{{host}}/contest/featuredContest"
+					},
+					"response": []
+				},
+				{
+					"name": "enrollContest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"63e09d1c50dbf8baebbcd8ba\"\r\n}"
+						},
+						"url": "{{host}}/contest/enrollContest"
+					},
+					"response": []
+				},
+				{
+					"name": "updateRoundById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contest_id\": \"638459499cc27e16249bc59f\",\n    \"round_id\": 318,\n    \"round_name\": \"dance\",\n    \"no_of_finalist\": 6,\n    \"start_date\": \"2022-11-28T01: 38: 00.128Z\",\n    \"end_date\": \"2022-11-28T02:30:10.128Z\",\n    \"result_date\": \"2022-12-01T06:48:11.128Z\",\n    \"start_date_voting\": \"2022-11-29T06:48:11.128Z\",\n    \"end_date_voting\": \"2022-11-30T06:48:11.128Z\",\n    \"result_by\": 1,\n    \"instructions\": \"gdnjedyn\",\n    \"isLive\": 0,\n    \"is_final_round\": 0\n}"
+						},
+						"url": "{{host}}/contest/updateRoundById"
+					},
+					"response": []
+				},
+				{
+					"name": "bookmarkContest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"63316d7e2e50655432c77ce2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/contest/bookmarkContest"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchAllContestBookmarks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"string\"\r\n}"
+						},
+						"url": "{{host}}/contest/fetchAllContestBookmarks"
+					},
+					"response": []
+				},
+				{
+					"name": "updateContest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contest_id\":\"6375bd39f8c55e8280b8259b\",\r\n  \"contest_title\": \"Audition1\",\r\n  \"start_date_time\": \"2022-10-17T02:09:30.471Z\",\r\n  \"category_id\": \"2\",\r\n  \"contestType_id\": \"2\",\r\n  \"isPaid\": 1,\r\n  \"fees\":100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/contest/updateContest"
+					},
+					"response": []
+				},
+				{
+					"name": "deactivateContest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"634aa12c1d4cf1003e487f4e\",\n  \"reason_type_id\": \"3\",\n  \"reason\":\"@!~\"\n}"
+						},
+						"url": "{{host}}/contest/deactivateContest"
+					},
+					"response": []
+				},
+				{
+					"name": "deactivateReasons",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/contest/deactivateReasons"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRoundsById",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/contest/deleteRoundsById?contest_id =634e3c23fa1e9d7a8b1d9d37&round_id =2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"contest",
+								"deleteRoundsById"
+							],
+							"query": [
+								{
+									"key": "contest_id ",
+									"value": "634e3c23fa1e9d7a8b1d9d37"
+								},
+								{
+									"key": "round_id ",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "myContests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"string\"\r\n}"
+						},
+						"url": "{{host}}/contest/myContests"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchContestType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/contest/fetchContestType"
+					},
+					"response": []
+				},
+				{
+					"name": "getMasterCategoryList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{host}}/contest/getMasterCategoryList"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchAllJudges",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\": \"\",\r\n    \"contest_id\": \"\"\r\n}"
+						},
+						"url": "{{host}}/contest/fetchAllJudges"
+					},
+					"response": []
+				},
+				{
+					"name": "sendRequestToJudge",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"63e09d1c50dbf8baebbcd8ba\",\r\n  \"user_id\": 31,\r\n  \"judge_type_id\": null\r\n}"
+						},
+						"url": "{{host}}/contest/sendRequestToJudge"
+					},
+					"response": []
+				},
+				{
+					"name": "updateJudgeRequestStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"637324ed2c900ff2bd5dc99e\",\r\n  \"user_id\": \"31\",\r\n  \"status\": \"1\"\r\n}"
+						},
+						"url": "{{host}}/contest/updateJudgeRequestStatus"
+					},
+					"response": []
+				},
+				{
+					"name": "cancelRequestToJudge",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"6373392df577050276f14f8c\",\r\n  \"user_id\": 524,\r\n  \"judge_type_id\":1\r\n}"
+						},
+						"url": "{{host}}/contest/cancelRequestToJudge"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchAllJudgeVotingContests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"\"\r\n}"
+						},
+						"url": "{{host}}/contest/fetchAllJudgeVotingContests"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchAllPublicVotingContests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"\"\r\n}"
+						},
+						"url": "{{host}}/contest/fetchAllPublicVotingContests"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchCompletedContests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"Zipcho demo\"\r\n}"
+						},
+						"url": {
+							"raw": "{{host}}/contest/fetchCompletedContests/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"contest",
+								"fetchCompletedContests",
+								"2"
+							],
+							"query": [
+								{
+									"key": "contest_id",
+									"value": "635a4d90727a44234941b338",
+									"disabled": true
+								},
+								{
+									"key": "category_id ",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetchContestDetailsById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"14677\"\n}"
+						},
+						"url": "{{host}}/contest/fetchContestDetailsById"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchInstructionAndDescById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"6375bd39f8c55e8280b8259b\"\r\n}"
+						},
+						"url": "{{host}}/contest/fetchInstructionAndDescById"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchInstructionAndDescByIdForUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/contest/fetchInstructionAndDescByIdForUser/635a4d90727a44234941b338",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"contest",
+								"fetchInstructionAndDescByIdForUser",
+								"635a4d90727a44234941b338"
+							],
+							"query": [
+								{
+									"key": "contest_id",
+									"value": "6373392df577050276f14f8c",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateInstructionAndDesc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"6375bd39f8c55e8280b8259b\",\r\n  \"description\": \"Audition\",\r\n  \"instruction\": \"follow rules\",\r\n  \"mediaUrls\": [\r\n    {\r\n      \"mediaUrl\": \"https://zipchodev.s3.ap-south-1.amazonaws.com/contest/cover_pic/1664184405_Screenshot_2022-09-26-14-45-49-575_com.zipcho.android.jpg\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/contest/updateInstructionAndDesc"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchLiveContests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"jgdt\"\r\n}"
+						},
+						"url": {
+							"raw": "{{host}}/contest/fetchLiveContests/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"contest",
+								"fetchLiveContests",
+								"2"
+							],
+							"query": [
+								{
+									"key": "category_id ",
+									"value": "6353c6576b025d50655a2ef9",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetchTopContests",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"sfwsg\"\r\n}"
+						},
+						"url": {
+							"raw": "{{host}}/contest/fetchTopContestants/635a4d90727a44234941b338",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"contest",
+								"fetchTopContestants",
+								"635a4d90727a44234941b338"
+							],
+							"query": [
+								{
+									"key": "contest_id",
+									"value": "635a4d90727a44234941b338",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetchUpComingContests",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"keyword\": \"Au\"\r\n}"
+						},
+						"url": {
+							"raw": "{{host}}/contest/fetchUpcomingContests/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"contest",
+								"fetchUpcomingContests",
+								"1"
+							],
+							"query": [
+								{
+									"key": "category_id ",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetchUserParticipatedContest",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"url": "{{host}}/contest/fetchUserParticipatedContest"
+					},
+					"response": []
+				},
+				{
+					"name": "getMyActivitiesByContestId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"url": "{{host}}/contest/getMyActivitiesByContestId/6375fa45f8c55e8280b825ba"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchUserParticipatedContest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"keyword\": \"\"\n}"
+						},
+						"url": "{{host}}/contest/fetchUserParticipatedContest"
+					},
+					"response": []
+				},
+				{
+					"name": "uploadCoverPic",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "contest_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "cover_pic ",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{host}}/contest/uploadCoverPic"
+					},
+					"response": []
+				},
+				{
+					"name": "uploadDisplayPic",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "contest_id",
+									"value": "63316da53bb6d0a6177c0c23",
+									"type": "text"
+								},
+								{
+									"key": "display_pic ",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": "{{host}}/contest/uploadDisplayPic"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchVotingSettings",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"63858d41c72223caf52b48b5\"\n}"
+						},
+						"url": "{{host}}/contest/fetchVotingSettings"
+					},
+					"response": []
+				},
+				{
+					"name": "getJudgesByContestId",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"keyword\": \"\"\n}"
+						},
+						"url": "{{host}}/contest/getJudgesByContestId/6375bd39f8c55e8280b8259b"
+					},
+					"response": []
+				},
+				{
+					"name": "getParticipantsByContestId",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"keyword\": \"\"\n}"
+						},
+						"url": "{{host}}/contest/getParticipantsByContestId/63858d41c72223caf52b48b5"
+					},
+					"response": []
+				},
+				{
+					"name": "getSponsorById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4ODMyNjUxLCJpYXQiOjE2Njg2NTk4NTEsImp0aSI6IjJmZTU5Y2YzMTEyYTRmMTNiOGRiNTM3ZmFkZGQ3ZDA5IiwidXNlcl9pZCI6MzF9.3MW4PTl255FN41XAa-jSwKzHUtaPJw0ASmLxXLgT4C4"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"url": "{{host}}/contest/getSponsorById/6375bd39f8c55e8280b8259b"
+					},
+					"response": []
+				},
+				{
+					"name": "getTotalPointsForVoting",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"url": "{{host}}/contest/getTotalPointsForVoting/6375bd39f8c55e8280b8259b"
+					},
+					"response": []
+				},
+				{
+					"name": "participantUploadContestMedia",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"6375bd39f8c55e8280b8259b\",\n  \"round_id\": 260,\n  \"mediaUrl\": \"https://zipchodev.s3.ap-south-1.amazonaws.com/contest/cover_pic/defaultCoverPic.jpg\",\n  \"mediaType\": \"Image\",\n  \"aspectRatio\": \"360:20\",\n  \"caption\": \"shthew\"\n}"
+						},
+						"url": "{{host}}/contest/participantUploadContestMedia"
+					},
+					"response": []
+				},
+				{
+					"name": "publicContestsListingCompleted",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"keyword\": \"\"\n}"
+						},
+						"url": "{{host}}/contest/publicContestsListingCompleted"
+					},
+					"response": []
+				},
+				{
+					"name": "publicContestsListingLive",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"keyword\": \"\"\n}"
+						},
+						"url": "{{host}}/contest/publicContestsListingLive"
+					},
+					"response": []
+				},
+				{
+					"name": "publicContestsListingUpcoming",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"keyword\": \"\"\n}"
+						},
+						"url": "{{host}}/contest/publicContestsListingUpcoming"
+					},
+					"response": []
+				},
+				{
+					"name": "updatePointsForParticipants",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"6375bd39f8c55e8280b8259b\",\n  \"round_id\": 262,\n  \"participant_user_id\": 211,\n  \"points\": 10\n}"
+						},
+						"url": "{{host}}/contest/updatePointsForParticipants"
+					},
+					"response": []
+				},
+				{
+					"name": "updateSponsor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"638459499cc27e16249bc59f\",\n  \"sponsor_caption\": \"test\",\n  \"can_donate\": 1,\n  \"can_call\": 1,\n  \"sponsor_mediaUrls\": [\n    {\n      \"mediaUrl\": \"string\",\n      \"mediaType\": \"string\",\n      \"aspectRatio\": \"string\"\n    }\n  ]\n}"
+						},
+						"url": "{{host}}/contest/updateSponsor"
+					},
+					"response": []
+				},
+				{
+					"name": "updateVotingSettings",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "XgbJta6dnwaOttSFRgo1XEGbRtqkFvT6WI8JZOvZLW69671Y94q9zGJQis2JmhVM"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contest_id\": \"string\",\r\n  \"userId\": \"string\",\r\n  \"status\": \"string\"\r\n}"
+						},
+						"url": "{{host}}/contest/updateVotingSettings"
+					},
+					"response": []
+				},
+				{
+					"name": "updateVoteForParticipants",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "t0VSi4GPpMJIW1IvMS32yZkrxSJgxcbpssSSOI5BNcF3zFRO4G5aa1n6YRlFeYd5"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contest_id\": \"6375bd39f8c55e8280b8259b\",\n  \"round_id\": 260,\n  \"participant_user_id\": \"31\"\n}"
+						},
+						"url": "{{host}}/contest/updateVoteForParticipants"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchUserContestDetailsById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{Token}}"
+							},
+							{
+								"key": "X-CSRFToken",
+								"value": "DI71G3T03D1RSvWR34YViQeVdjdycAGDCa41cHiMr3Xcv95alS03UShAEiPXTmIj"
+							}
+						],
+						"url": "{{host}}/contest/fetchUserContestDetailsById/63858d41c72223caf52b48b5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "fetchActivity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page_size\": 0,\r\n  \"page\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/notification/fetchActivity"
+					},
+					"response": []
+				},
+				{
+					"name": "followRequestNotifications",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page_size\": 0,\r\n  \"page\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/notification/followRequestNotifications"
+					},
+					"response": []
+				},
+				{
+					"name": "fetchJudgeNotifications",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"page_size\": 10,\r\n  \"page\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/notification/fetchJudgeNotifications"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
